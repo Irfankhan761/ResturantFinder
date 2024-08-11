@@ -1,0 +1,6 @@
+
+Backend/node_modules/@faker-js/faker/dist/cjs/locales/ru/person/index.js
+*.js
+/Backend
+*.json
+/myfrontend
