@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { handleError, handleSuccess } from "../util";
 import { ToastContainer } from "react-toastify";
 
@@ -77,6 +77,10 @@ function Login() {
           />
         </div>
         <button>Login</button>
+        <span>
+          Does not have an account?
+          <Link to="/Register">SignUp</Link>
+        </span>
       </form>
       <ToastContainer />
     </div>
