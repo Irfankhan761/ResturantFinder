@@ -42,9 +42,9 @@ Before setting up the project, ensure that you have the following software insta
    - npm init -y
    - npm install mongodb@6.8
    - npm install dotenv
-   - Copy the connection string from your MongoDB database.
-   - Update the placeholder username and password in the connection string.
-   - Paste the updated connection string in your main file (e.g., index.js) for database connectivity.
+   - Copy the connection string from your MongoDB database.(skip incase of running this project)
+   - Update the placeholder username and password in the connection string.(Skip incase of running this project)
+   - Paste the updated connection string in your main file (e.g., index.js) for database connectivity. (Skip incase of running this project)
    - Execute the server by run the below commond inside backed dir:
       - node index.js
 ## Frontend
