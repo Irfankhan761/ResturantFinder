@@ -14,7 +14,6 @@
 5. [Project Usage](#project-usage)
    - [User Authentication](#user-authentication)
    - [Restaurant Search Interface](#restaurant-search-interface)
-6. [Troubleshooting](#troubleshooting)
 
 ---
 
@@ -40,51 +39,39 @@ Before setting up the project, ensure that you have the following software insta
 
 2. **Database Connectivity**:
    Open your terminal and run the following commands inside the `Backend` directory:
-   ```bash
-   npm init -y
-   npm install mongodb@6.8
-   npm install dotenv
-Copy the connection string from your MongoDB database.
-Update the placeholder username and password in the connection string.
-Paste the updated connection string in your main file (e.g., index.js) for database connectivity.
-Execute the server:
-node index.js
-Frontend Setup
-Installing Dependencies:
-Open your terminal and navigate to the frontend directory:
-
-bash
-Copy code
-cd myfrontend
-npm install
-Running the Frontend:
-Start the frontend server:
-
-bash
-Copy code
-npm start
-Project Usage
-User Authentication
-Registration:
-
-Navigate to the registration page from the homepage.
-Fill in the required details (username, email, password).
-Click on the "Register" button.
-On successful registration, you will be redirected to the login page.
-Login:
-
-Navigate to the login page.
-Enter your credentials (email and password).
-Click on the "Login" button.
-On successful login, you will be redirected to the homepage.
-Restaurant Search Interface
-Search by Name:
-
-Use the search bar to enter the restaurant name.
-The results will display matching restaurants.
-Filter by Attributes:
-
-Use the filter options to narrow down the search results by cuisine type, location, and rating.
-Pagination:
-
-Use the pagination controls at the bottom of the search results to navigate through multiple pages.
+   - npm init -y
+   - npm install mongodb@6.8
+   - npm install dotenv
+   - Copy the connection string from your MongoDB database.
+   - Update the placeholder username and password in the connection string.
+   - Paste the updated connection string in your main file (e.g., index.js) for database connectivity.
+   - Execute the server by run the below commond inside backed dir:
+      - node index.js
+## Frontend
+### Frontend Setup
+1. **Installing Dependencies**:
+   - Open your terminal and navigate to the frontend directory:
+   - cd myfrontend
+   - npm install
+2. **Running the Frontend**:
+   - Start the frontend server:
+   - npm start
+## Project Usage
+### User Authentication
+1. Registration:
+   - Navigate to the registration page from the homepage.
+   - Fill in the required details (username, email, password).
+   - Click on the "Register" button.
+   - On successful registration, you will be redirected to the login page.
+2. Login:
+   - Navigate to the login page.
+   - Enter your credentials (email and password).
+   - Click on the "Login" button.
+   - On successful login, you will be redirected to the homepage.
+3. Restaurant Search Interface Search by Name:
+   - Use the search bar to enter the restaurant name.
+   - The results will display matching restaurants.
+   - Filter by Attributes:
+   - Use the filter options to narrow down the search results by cuisine type, location, and rating.
+4. Pagination:
+   - Use the pagination controls at the bottom of the search results to navigate through multiple pages.
