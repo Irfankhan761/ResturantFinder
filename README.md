@@ -3,6 +3,7 @@
 **MERN stack 3 Days Task**
 
 ## Table of Contents
+
 1. [Project Overview](#project-overview)
 2. [Prerequisites](#prerequisites)
 3. [Backend Setup](#backend-setup)
@@ -18,9 +19,11 @@
 ---
 
 ## Project Overview
+
 **RestaurantFinder** is a full-stack application that allows users to search for restaurants based on various attributes such as name, cuisine type, location, and rating. It also provides user authentication, enabling users to create an account and log in to access the restaurant search interface.
 
 ## Prerequisites
+
 Before setting up the project, ensure that you have the following software installed:
 
 - **Node.js** (v14 or higher)
@@ -31,7 +34,9 @@ Before setting up the project, ensure that you have the following software insta
 ## Backend Setup
 
 ### Database Setup
+
 1. **Create the Database**:
+
    - Go to [MongoDB.com](https://www.mongodb.com/).
    - Set the project name to **DineFinder**.
    - Create a cluster (e.g., **cluster0**).
@@ -46,9 +51,12 @@ Before setting up the project, ensure that you have the following software insta
    - Update the placeholder username and password in the connection string.(Skip incase of running this project)
    - Paste the updated connection string in your main file (e.g., index.js) for database connectivity. (Skip incase of running this project)
    - Execute the server by run the below commond inside backed dir:
-      - node index.js
+     - node index.js
+
 ## Frontend
+
 ### Frontend Setup
+
 1. **Installing Dependencies**:
    - Open your terminal and navigate to the frontend directory:
    - cd myfrontend
@@ -56,8 +64,11 @@ Before setting up the project, ensure that you have the following software insta
 2. **Running the Frontend**:
    - Start the frontend server:
    - npm start
+
 ## Project Usage
+
 ### User Authentication
+
 1. Registration:
    - Navigate to the registration page from the homepage.
    - Fill in the required details (username, email, password).
@@ -75,3 +86,9 @@ Before setting up the project, ensure that you have the following software insta
    - Use the filter options to narrow down the search results by cuisine type, location, and rating.
 4. Pagination:
    - Use the pagination controls at the bottom of the search results to navigate through multiple pages.
+
+## Project Demo
+
+To get a quick overview of how the **RestaurantFinder** application works, you can watch the demo video below:
+
+[![Project Demo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://drive.google.com/file/d/13zqILYVc9C7jvrstotqILgG4AIAqe1BM/view?usp=sharing)
