@@ -91,4 +91,4 @@ Before setting up the project, ensure that you have the following software insta
 
 To get a quick overview of how the **RestaurantFinder** application works, you can watch the demo video below:
 
-[![Project Demo](https://img.youtube.com/vi/dQw4w9WgXcQ/0.jpg)](https://drive.google.com/file/d/13zqILYVc9C7jvrstotqILgG4AIAqe1BM/view?usp=sharing)
+Watch the [project demo video](https://drive.google.com/file/d/13zqILYVc9C7jvrstotqILgG4AIAqe1BM/view?usp=sharing) to see the application in action.
