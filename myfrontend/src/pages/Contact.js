@@ -1,4 +1,6 @@
+// myfrontend/src/pages/Contact.js
 import React, { useState } from "react";
+import axios from "axios";
 import Footer from "../components/Footer";
 
 function Contact() {
@@ -15,17 +17,31 @@ function Contact() {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
 
     if (formData.name && formData.email && formData.message) {
-      setSuccessMessage("Thank you! Your message has been sent.");
-      setErrorMessage("");
-      setFormData({
-        name: "",
-        email: "",
-        message: "",
-      });
+      try {
+        console.log("Submitting form data:", formData);
+        const response = await axios.post(
+          "http://localhost:3000/api/contacts",
+          formData
+        );
+        if (response.status === 200) {
+          setSuccessMessage("Thank you! Your message has been sent.");
+          setErrorMessage("");
+          setFormData({
+            name: "",
+            email: "",
+            message: "",
+          });
+        } else {
+          setErrorMessage("Failed to send the message, please try again.");
+        }
+      } catch (error) {
+        console.error("Submission error:", error);
+        setErrorMessage("An error occurred. Please try again later.");
+      }
     } else {
       setErrorMessage("Please fill out all fields.");
       setSuccessMessage("");
@@ -45,6 +61,7 @@ function Contact() {
               name="name"
               value={formData.name}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -55,6 +72,7 @@ function Contact() {
               name="email"
               value={formData.email}
               onChange={handleChange}
+              required
             />
           </div>
           <div className="form-group">
@@ -64,6 +82,7 @@ function Contact() {
               name="message"
               value={formData.message}
               onChange={handleChange}
+              required
             ></textarea>
           </div>
           {successMessage && (
