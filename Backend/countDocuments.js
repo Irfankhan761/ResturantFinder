@@ -2,11 +2,10 @@
 
 const mongoose = require("mongoose");
 const Restaurant = require("./models/restaurant");
+require("dotenv").config();
 
 mongoose
-  .connect(
-    "mongodb+srv://irfandk:irfan761@cluster0.lwbjnfp.mongodb.net/Dinefinder?retryWrites=true&w=majority"
-  )
+  .connect(process.env.MONGO_URI)
   .then(async () => {
     console.log("Connected to MongoDB");
     const count = await Restaurant.countDocuments(); // Count all documents

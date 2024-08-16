@@ -3,11 +3,10 @@
 const mongoose = require("mongoose");
 const { faker } = require("@faker-js/faker"); // Updated import
 const Restaurant = require("./models/restaurant");
+require("dotenv").config();
 
 mongoose
-  .connect(
-    "mongodb+srv://irfandk:irfan761@cluster0.lwbjnfp.mongodb.net/Dinefinder?retryWrites=true&w=majority"
-  )
+  .connect(process.env.MONGO_URI)
   .then(() => {
     console.log("Connected to MongoDB for seeding");
     seedDatabase();
@@ -17,7 +16,7 @@ mongoose
   });
 
 async function seedDatabase() {
-  for (let i = 0; i < 20000; i++) {
+  for (let i = 0; i < 20020; i++) {
     const restaurant = new Restaurant({
       name: faker.company.name(), // Updated method name
       cuisine: faker.helpers.arrayElement([
