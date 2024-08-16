@@ -4,19 +4,19 @@
 
 ## Table of Contents
 
-1. [Project Overview](#project-overview)
-2. [Prerequisites](#prerequisites)
-3. [Backend Setup](#backend-setup)
+1. [Project Overview](#1-project-overview)
+2. [Prerequisites](#2-prerequisites)
+3. [Backend Setup](#3-backend-setup)
    - [Database Setup](#database-setup)
-4. [Frontend Setup](#frontend-setup)
+4. [Frontend Setup](#4-frontend-setup)
    - [Installing Dependencies](#installing-dependencies)
    - [Running the Frontend](#running-the-frontend)
-5. [Project Usage](#project-usage)
+5. [Project Usage](#5-project-usage)
    - [User Authentication](#user-authentication)
-   - [Contact US Interface](#contact-us-interface)
+   - [Contact Us Interface](#contact-us-interface)
    - [Restaurant Search Interface](#restaurant-search-interface)
    - [Pagination](#pagination)
-6. [Project Demo](#project-demo)
+6. [Project Demo](#6-project-demo)
 
 ---
 
@@ -46,26 +46,24 @@ Before setting up the project, ensure that you have the following software insta
 
 2. **Database Connectivity**:
    Open your terminal and run the following commands inside the `Backend` directory:
-   - npm init -y
-   - npm install mongodb@6.8
-   - npm install dotenv
-   - Copy the connection string from your MongoDB database.(skip incase of running this project)
-   - Update the placeholder username and password in the connection string.(Skip incase of running this project)
-   - Paste the updated connection string in your main file (e.g., index.js) for database connectivity. (Skip incase of running this project)
-   - Execute the server by run the below commond inside backed dir:
-     - node index.js
+   - `npm init -y`
+   - `npm install mongodb@6.8`
+   - `npm install dotenv`
+   - Copy the connection string from your MongoDB database. (Skip in case of running this project)
+   - Update the placeholder username and password in the connection string. (Skip in case of running this project)
+   - Paste the updated connection string in your main file (e.g., index.js) for database connectivity. (Skip in case of running this project)
+   - Execute the server by running the below command inside the `Backend` directory:
+     - `node index.js`
 
-## 4. Frontend
-
-### Frontend Setup
+## 4. Frontend Setup
 
 1. **Installing Dependencies**:
    - Open your terminal and navigate to the frontend directory:
-   - cd myfrontend
-   - npm install
+   - `cd myfrontend`
+   - `npm install`
 2. **Running the Frontend**:
    - Start the frontend server:
-   - npm start
+   - `npm start`
 
 ## 5. Project Usage
 
@@ -82,12 +80,12 @@ Before setting up the project, ensure that you have the following software insta
    - Click on the "Login" button.
    - On successful login, you will be redirected to the homepage.
 
-### Contact US Interface
+### Contact Us Interface
 
 3. Contact Us:
    - Navigate to the Contact page.
-   - Enter your details including message (name, email and message).
-   - Click on the "send message" button.
+   - Enter your details, including the message (name, email, and message).
+   - Click on the "Send Message" button.
 
 ### Restaurant Search Interface
 
