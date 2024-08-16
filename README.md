@@ -8,21 +8,23 @@
 2. [Prerequisites](#prerequisites)
 3. [Backend Setup](#backend-setup)
    - [Database Setup](#database-setup)
-   - [Server Setup](#server-setup)
 4. [Frontend Setup](#frontend-setup)
    - [Installing Dependencies](#installing-dependencies)
    - [Running the Frontend](#running-the-frontend)
 5. [Project Usage](#project-usage)
    - [User Authentication](#user-authentication)
+   - [Contact US Interface](#contact-us-interface)
    - [Restaurant Search Interface](#restaurant-search-interface)
+   - [Pagination](#pagination)
+6. [Project Demo](#project-demo)
 
 ---
 
-## Project Overview
+## 1. Project Overview
 
 **RestaurantFinder** is a full-stack application that allows users to search for restaurants based on various attributes such as name, cuisine type, location, and rating. It also provides user authentication, enabling users to create an account and log in to access the restaurant search interface.
 
-## Prerequisites
+## 2. Prerequisites
 
 Before setting up the project, ensure that you have the following software installed:
 
@@ -31,7 +33,7 @@ Before setting up the project, ensure that you have the following software insta
 - **npm** (v6.14 or higher)
 - **Git**
 
-## Backend Setup
+## 3. Backend Setup
 
 ### Database Setup
 
@@ -53,7 +55,7 @@ Before setting up the project, ensure that you have the following software insta
    - Execute the server by run the below commond inside backed dir:
      - node index.js
 
-## Frontend
+## 4. Frontend
 
 ### Frontend Setup
 
@@ -65,7 +67,7 @@ Before setting up the project, ensure that you have the following software insta
    - Start the frontend server:
    - npm start
 
-## Project Usage
+## 5. Project Usage
 
 ### User Authentication
 
@@ -79,15 +81,28 @@ Before setting up the project, ensure that you have the following software insta
    - Enter your credentials (email and password).
    - Click on the "Login" button.
    - On successful login, you will be redirected to the homepage.
-3. Restaurant Search Interface Search by Name:
+
+### Contact US Interface
+
+3. Contact Us:
+   - Navigate to the Contact page.
+   - Enter your details including message (name, email and message).
+   - Click on the "send message" button.
+
+### Restaurant Search Interface
+
+4. Restaurant Search Interface Search by Name:
    - Use the search bar to enter the restaurant name.
    - The results will display matching restaurants.
    - Filter by Attributes:
    - Use the filter options to narrow down the search results by cuisine type, location, and rating.
-4. Pagination:
+
+### Pagination
+
+5. Pagination:
    - Use the pagination controls at the bottom of the search results to navigate through multiple pages.
 
-## Project Demo
+## 6. Project Demo
 
 To get a quick overview of how the **RestaurantFinder** application works, you can watch the demo video below:
 
